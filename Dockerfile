@@ -21,4 +21,5 @@ VOLUME ["/data/db"]
 EXPOSE 27017
 EXPOSE 28017
 
-ENTRYPOINT ["mongod", "-f", "/data/mongodb.conf"]
+ENTRYPOINT ["mongod"]
+CMD ["-f", "/data/mongodb.conf"]
