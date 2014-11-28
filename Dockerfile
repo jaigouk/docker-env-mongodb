@@ -12,9 +12,6 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10 && \
     apt-get install -y adduser mongodb-org && \
     rm -rf /var/lib/apt/lists/*
 
-# Define mountable directories.
-VOLUME ["/data/db"]
-
 # Expose ports.
 #   - 27017: process
 #   - 28017: http
