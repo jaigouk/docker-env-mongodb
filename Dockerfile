@@ -20,4 +20,5 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10 \
 EXPOSE 27017
 EXPOSE 28017
 
-ENTRYPOINT ["mongod", "-f", "/data/db/mongodb.conf"]
+ENTRYPOINT ["mongod"]
+CMD ["-f", "/data/db/mongodb.conf"]
